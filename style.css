@@ -5,13 +5,6 @@ background:#0f172a;
 color:white;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-padding:20px 40px;
-background:#020617;
-}
-
 .hero{
 display:flex;
 gap:40px;
@@ -32,6 +25,36 @@ margin:auto;
 padding:60px 20px;
 }
 
+
+
+/* NAV BOXES */
+
+.nav-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+margin-bottom:40px;
+}
+
+.nav-box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+text-align:center;
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:0.3s;
+}
+
+.nav-box:hover{
+background:#334155;
+}
+
+
+
+/* IMPACT */
+
 .impact-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
@@ -44,6 +67,10 @@ padding:25px;
 border-radius:10px;
 text-align:center;
 }
+
+
+
+/* CASE STUDIES */
 
 .case-grid{
 display:grid;
@@ -64,6 +91,10 @@ transition:0.3s;
 background:#334155;
 }
 
+
+
+/* WORKFLOW */
+
 .workflow{
 display:flex;
 gap:10px;
@@ -76,6 +107,10 @@ background:#1e293b;
 padding:10px 15px;
 border-radius:6px;
 }
+
+
+
+/* PROJECTS */
 
 .projects-grid{
 display:grid;
@@ -94,6 +129,10 @@ color:#38bdf8;
 text-decoration:none;
 }
 
+
+
+/* TOOLS */
+
 .tools{
 display:flex;
 gap:15px;
@@ -105,6 +144,34 @@ background:#1e293b;
 padding:10px 15px;
 border-radius:6px;
 }
+
+
+
+/* CONTACT */
+
+.contact-box{
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+max-width:500px;
+margin-bottom:20px;
+}
+
+
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn{
+display:inline-block;
+background:#25D366;
+padding:12px 20px;
+border-radius:8px;
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+
 
 .hidden{
 display:none;
