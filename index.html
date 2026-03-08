@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sahil Dhapta | Operations & Customer Success Strategist</title>
+<title>Sahil Dhapta | Operations Strategy Portfolio</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,14 +17,12 @@
 <body>
 
 <nav>
+
 <h2>Sahil Dhapta</h2>
 
 <ul>
 <li><a href="#impact">Impact</a></li>
-<li><a href="#experience">Experience</a></li>
 <li><a href="#cases">Case Studies</a></li>
-<li><a href="#framework">Framework</a></li>
-<li><a href="#projects">Projects</a></li>
 <li><a href="#tools">Tools</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
@@ -43,8 +42,8 @@
 <h1>Operations & Customer Success Strategist</h1>
 
 <p>
-Helping global companies improve support operations,
-reduce escalations and optimize service workflows.
+Helping global teams improve support operations,
+reduce escalations and optimize workflows.
 </p>
 
 </div>
@@ -63,7 +62,7 @@ reduce escalations and optimize service workflows.
 
 <div class="impact-card">
 <h3>5+</h3>
-<p>Enterprise Clients Managed</p>
+<p>Enterprise Clients</p>
 </div>
 
 <div class="impact-card">
@@ -73,7 +72,7 @@ reduce escalations and optimize service workflows.
 
 <div class="impact-card">
 <h3>30%</h3>
-<p>Repeat Issue Reduction</p>
+<p>Issue Reduction</p>
 </div>
 
 <div class="impact-card">
@@ -87,25 +86,35 @@ reduce escalations and optimize service workflows.
 
 
 
-<section id="experience">
+<section id="cases">
 
-<h2>Professional Experience</h2>
+<h2>Case Studies</h2>
 
-<div class="experience">
+<div class="case-grid">
 
-<h3>Client Specialist — Wipro</h3>
+<div class="case-card" onclick="openCase('case1')">
+HR Query Resolution
+</div>
 
-<ul>
+<div class="case-card" onclick="openCase('case2')">
+Client Communication Workflow
+</div>
 
-<li>Managed operations for US enterprise accounts</li>
+<div class="case-card" onclick="openCase('case3')">
+Support Performance Analytics
+</div>
 
-<li>Coordinated support teams and client managers</li>
+<div class="case-card" onclick="openCase('case4')">
+Remote Hiring Workflow
+</div>
 
-<li>Owned escalation handling and SLA compliance</li>
+<div class="case-card" onclick="openCase('case5')">
+Remote Team Productivity
+</div>
 
-<li>Reduced repeat issues through root cause analysis</li>
-
-</ul>
+<div class="case-card" onclick="openCase('case6')">
+Operations Workflow Optimization
+</div>
 
 </div>
 
@@ -113,132 +122,19 @@ reduce escalations and optimize service workflows.
 
 
 
-<section id="cases">
+<section id="case-detail" class="hidden">
 
-<h2>Consulting Case Studies</h2>
-
-
-
-<div class="case">
-
-<h3>HR Query Resolution Optimization</h3>
+<h2 id="case-title"></h2>
 
 <div class="dashboard">
 
-<p><b>Problem</b></p>
-<p>Slow HR ticket resolution (24–36 hours)</p>
-
-<p><b>Solution</b></p>
-<p>Implemented structured categorization and knowledge documentation</p>
-
-<p><b>Impact</b></p>
-<p>Resolution reduced to ~8–10 hours</p>
+<p id="case-problem"></p>
+<p id="case-solution"></p>
+<p id="case-impact"></p>
 
 </div>
 
-<div class="workflow">
-
-<div class="box">Employee Query</div>
-
-<div class="arrow">↓</div>
-
-<div class="box">Ticket System</div>
-
-<div class="arrow">↓</div>
-
-<div class="box">Categorization</div>
-
-<div class="arrow">↓</div>
-
-<div class="box">HR Specialist</div>
-
-<div class="arrow">↓</div>
-
-<div class="box">Resolution</div>
-
-</div>
-
-</div>
-
-
-
-</section>
-
-
-
-<section id="framework">
-
-<h2>Operations Improvement Framework</h2>
-
-<div class="framework">
-
-<div class="framework-card">
-<h3>Diagnose</h3>
-<p>Identify workflow bottlenecks through data and ticket analysis.</p>
-</div>
-
-<div class="framework-card">
-<h3>Structure</h3>
-<p>Create clear escalation paths and communication workflows.</p>
-</div>
-
-<div class="framework-card">
-<h3>Optimize</h3>
-<p>Improve processes using routing systems and documentation.</p>
-</div>
-
-<div class="framework-card">
-<h3>Monitor</h3>
-<p>Track KPIs like resolution time and SLA compliance.</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="projects">
-
-<h2>Digital Products Built</h2>
-
-<div class="projects">
-
-<div class="project">
-
-<h3>Tourism Website</h3>
-
-<p>Travel platform designed for tourism package discovery.</p>
-
-<a href="https://thesafarnamatrails.netlify.app/" target="_blank">View Website</a>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>ShivSutra Studio</h3>
-
-<p>Web development portfolio showcasing UI design services.</p>
-
-<a href="https://shivsutrastudio.vercel.app/" target="_blank">View Website</a>
-
-</div>
-
-
-
-<div class="project">
-
-<h3>Restaurant Website</h3>
-
-<p>Restaurant landing page designed for menu and booking display.</p>
-
-<a href="https://restraunt3015.vercel.app/index.html" target="_blank">View Website</a>
-
-</div>
-
-</div>
+<div id="workflow" class="workflow"></div>
 
 </section>
 
@@ -269,28 +165,21 @@ reduce escalations and optimize service workflows.
 
 <p>
 
-If your organization is improving customer support operations,
-client communication workflows or remote team performance,
-I'm open to collaboration.
+If your organization is improving support operations,
+client success workflows or remote team performance,
+let's connect.
 
 </p>
 
 <p>Email: mrdhapta@gmail.com</p>
 
-<p>Phone: +91 9015335621</p>
-
-<a href="https://linkedin.com/in/sahil-dhapta" target="_blank">LinkedIn Profile</a>
+<a href="https://linkedin.com/in/sahil-dhapta">LinkedIn</a>
 
 </section>
 
 
 
-<footer>
-
-<p>© 2026 Sahil Dhapta</p>
-
-</footer>
-
+<script src="script.js"></script>
 
 </body>
 </html>

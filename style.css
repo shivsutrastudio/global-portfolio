@@ -1,6 +1,6 @@
 body{
 margin:0;
-font-family:Inter,sans-serif;
+font-family:Inter;
 background:#0f172a;
 color:white;
 }
@@ -12,38 +12,24 @@ padding:20px 40px;
 background:#020617;
 }
 
-nav ul{
+.hero{
 display:flex;
-gap:20px;
-list-style:none;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
-header{
+gap:40px;
+align-items:center;
+max-width:1100px;
+margin:auto;
 padding:80px 20px;
 }
 
-.hero{
-display:flex;
-align-items:center;
-gap:40px;
-max-width:1100px;
-margin:auto;
-}
-
 .profile{
-width:220px;
-border-radius:12px;
+width:200px;
+border-radius:10px;
 }
 
 section{
 max-width:1100px;
 margin:auto;
-padding:80px 20px;
+padding:60px 20px;
 }
 
 .impact-grid{
@@ -54,84 +40,49 @@ gap:20px;
 
 .impact-card{
 background:#1e293b;
-padding:25px;
+padding:20px;
 border-radius:10px;
 text-align:center;
 }
 
-.experience ul{
-line-height:1.8;
-}
-
-.case{
-background:#1e293b;
-padding:30px;
-border-radius:10px;
-margin-bottom:30px;
-}
-
-.dashboard{
-background:#020617;
-padding:20px;
-border-radius:8px;
-margin-bottom:20px;
-}
-
-.workflow{
-display:flex;
-align-items:center;
-gap:10px;
-flex-wrap:wrap;
-}
-
-.box{
-background:#020617;
-padding:10px 15px;
-border-radius:6px;
-}
-
-.arrow{
-font-size:20px;
-}
-
-.framework{
-display:grid;
-grid-template-columns:repeat(2,1fr);
-gap:20px;
-}
-
-.framework-card{
-background:#1e293b;
-padding:25px;
-border-radius:10px;
-}
-
-.projects{
+.case-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:20px;
 }
 
-.project{
+.case-card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:10px;
+cursor:pointer;
+text-align:center;
 }
 
-.tools{
+.case-card:hover{
+background:#334155;
+}
+
+.workflow{
 display:flex;
-gap:15px;
+gap:10px;
 flex-wrap:wrap;
+margin-top:20px;
+}
+
+.box{
+background:#1e293b;
+padding:10px 15px;
+border-radius:6px;
 }
 
 .tools span{
 background:#1e293b;
 padding:10px 15px;
 border-radius:6px;
+margin-right:10px;
 }
 
-footer{
-text-align:center;
-padding:30px;
-background:#020617;
+.hidden{
+display:none;
 }
